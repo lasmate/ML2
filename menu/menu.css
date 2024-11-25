@@ -22,13 +22,15 @@ header
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
+  
 }
 header .logo
 {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  
 }
 .toggle
 {
@@ -133,13 +135,14 @@ header .logo
 /* Style the tab content */
 .tabcontent {
   display: none;
+  margin-top: 5%;
   padding: 6px 12px;
   padding-left: 2%;
   background: #faf0cac7;
 }
 
 .acccontent {
-  
+  margin-top: 8.5%;
   padding: 6px 12px;
   background: #FAF0CA;
 }
