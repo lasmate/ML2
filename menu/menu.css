@@ -1,8 +1,3 @@
-/*colors*/
-
-
-
-
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
@@ -22,15 +17,12 @@ header
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  
-  
 }
 header .logo
 {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  
 }
 .toggle
 {
@@ -62,7 +54,6 @@ header .logo
   justify-content:space-around;
   align-items: center;
   background: #0D3B66;
-  
   transition: 0.5s;
   z-index: 2;
 }
@@ -70,7 +61,6 @@ header .logo
 {
   right: 300px;
 }
-
 .menu
 {
   position: fixed;
@@ -102,14 +92,12 @@ header .logo
 {
   color: #a862b3; 
 }
-
 /* Style the tab */
 .tab {
   overflow: hidden;
   text-align: center;
   background-color: #FAF0CA;
 }
-
 /* Style the buttons inside the tab */
 .tab button {
   background-color: #FAF0CA;
@@ -121,7 +109,6 @@ header .logo
   transition: 0.3s;
   font-size: 24px;
 }
-
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #EE964B;
@@ -131,7 +118,6 @@ header .logo
 .tab button.active {
   background-color: #F95738;
 }
-
 /* Style the tab content */
 .tabcontent {
   display: none;
@@ -140,20 +126,18 @@ header .logo
   padding-left: 2%;
   background: #faf0cac7;
 }
-
+/* Style the acceuil content */
 .acccontent {
   margin-top: 8.5%;
   padding: 6px 12px;
   background: #FAF0CA;
 }
-
 th,td{
   padding: 15px;
 }
 ul > li {
   margin-left: 15px;
 }
-
 h2{
   text-align: center;
 }
