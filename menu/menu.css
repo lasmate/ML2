@@ -29,19 +29,50 @@ header .logo
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
+  border-radius: 12px;
+  background-color: rgba(250, 240, 202, 0.18);
+  border: 1px solid rgba(250, 240, 202, 0.55);
   cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+.toggle::before,
+.toggle::after
+{
+  content: '';
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 3px;
+  border-radius: 999px;
+  background: #fff;
+  transition: transform 0.25s ease, top 0.25s ease, box-shadow 0.25s ease;
+}
+.toggle::before
+{
+  top: 19px;
+  box-shadow: 0 10px 0 #fff;
+}
+.toggle::after
+{
+  top: 39px;
 }
 .toggle.active
 {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
+  background-color: #EE964B;
   cursor: pointer;
+  transform: rotate(0deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+.toggle.active::before
+{
+  top: 29px;
+  box-shadow: none;
+  transform: rotate(45deg);
+}
+.toggle.active::after
+{
+  top: 29px;
+  transform: rotate(-45deg);
 }
 .showcase
 {
